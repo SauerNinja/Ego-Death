@@ -101,12 +101,20 @@ a{color:var(--glass-gold)}
 h1,h2,h3{font-family:'Trajan Pro','Cinzel',Georgia,serif;letter-spacing:.02em;color:var(--glass-cream)}
 .progress-bar{position:fixed;top:0;left:0;height:4px;width:0%;z-index:999;
   background:linear-gradient(90deg,var(--glass-crimson),var(--glass-gold),var(--glass-blue),var(--glass-green));}
-nav.topnav{position:sticky;top:0;z-index:50;background:rgba(10,18,48,0.92);backdrop-filter:blur(6px);
-  border-bottom:2px solid var(--lead);padding:.8rem 1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem}
-nav.topnav .brand{font-family:'Trajan Pro',Georgia,serif;color:var(--glass-gold);font-weight:bold;letter-spacing:.04em}
-nav.topnav .links{display:flex;gap:1rem;flex-wrap:wrap;font-size:.85rem}
-nav.topnav .links a{text-decoration:none;color:var(--ink)}
-nav.topnav .links a:hover{color:var(--glass-gold)}
+nav.topnav{position:sticky;top:0;z-index:50;background:rgba(10,18,48,0.95);backdrop-filter:blur(6px);
+  border-bottom:2px solid var(--lead);padding:.8rem 1.4rem;display:flex;justify-content:space-between;align-items:center}
+nav.topnav .brand{font-family:'Trajan Pro',Georgia,serif;color:var(--glass-gold);font-weight:bold;letter-spacing:.04em;font-size:1.05rem}
+nav.topnav .toc-link{font-size:.8rem;color:var(--ink);text-decoration:none;border:1px solid var(--glass-gold);padding:.35rem .9rem;border-radius:2px;letter-spacing:.03em}
+nav.topnav .toc-link:hover{color:var(--glass-gold)}
+.toc-section{margin:0 auto 2.6rem;max-width:900px;padding:1.6rem 1.4rem 1.8rem;background:var(--panel);
+  border:1px solid var(--glass-gold);border-radius:2px;position:relative}
+.toc-section::before{content:"";position:absolute;inset:6px;border:1px solid rgba(201,161,59,.35);pointer-events:none}
+.toc-section h2{font-size:1.15rem;text-align:center;border:none;margin:0 0 1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--glass-gold)}
+.toc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem .9rem;font-size:.85rem}
+@media (max-width:700px){.toc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:460px){.toc-grid{grid-template-columns:1fr}}
+.toc-grid a{color:var(--ink);text-decoration:none;padding:.3rem .2rem;border-bottom:1px solid rgba(201,161,59,.15);display:block}
+.toc-grid a:hover{color:var(--glass-gold)}
 .hero-wrap{width:100%}
 .hero-wrap img{width:100%;display:block;height:auto;border-bottom:6px solid var(--lead)}
 .title-block{max-width:820px;margin:0 auto;padding:2.4rem 1.4rem 1rem;text-align:center}
@@ -154,36 +162,7 @@ footer{text-align:center;padding:2.4rem 1rem 3rem;font-size:.8rem;opacity:.7}
 
 <nav class="topnav">
   <div class="brand">✝ EGO DEATH</div>
-  <div class="links">
-    <a href="#thesis">Thesis</a>
-    <a href="#swoon">The Swoon</a>
-    <a href="#egodeath">Ego Death</a>
-    <a href="#psychmech">The Mechanism</a>
-    <a href="#gnostic">The Hidden Voice</a>
-    <a href="#deism">Deism</a>
-    <a href="#kashmir">Kashmir</a>
-    <a href="#trauma">Trauma &amp; Recovery</a>
-    <a href="#noscience">No Science, Either Way</a>
-    <a href="#stillincredible">Still Incredible</a>
-    <a href="#secrecy">The Silence</a>
-    <a href="#synthesis">Four Pillars</a>
-    <a href="#scienceverdict">The Verdict</a>
-    <a href="#voices">Other Voices</a>
-    <a href="#masterthread">Master Thread</a>
-    <a href="#rebirth">Reborn</a>
-    <a href="#prerequisite">What This Requires</a>
-    <a href="#whymoresense">More Sense</a>
-    <a href="#hiddenproof">The Corroboration</a>
-    <a href="#translations">Translations</a>
-    <a href="#noncanon">Period Writers</a>
-    <a href="#missing">What Was Missing</a>
-    <a href="#finalthreads">Last Threads</a>
-    <a href="#indiaunexplored">India, Deeper</a>
-    <a href="#archaeology">Archaeology</a>
-    <a href="#whyreturn">Why Return</a>
-    <a href="#speculation">Open Questions</a>
-    <a href="#sources">Sources</a>
-  </div>
+  <a href="#toc" class="toc-link">Contents</a>
 </nav>
 
 <div class="hero-wrap">
@@ -204,6 +183,41 @@ footer{text-align:center;padding:2.4rem 1rem 3rem;font-size:.8rem;opacity:.7}
 <p>If it holds, it does something else worth naming up front: it makes the change in the man more remarkable, not less. A figure whose canonical claims are, on a plain reading, some of the most grandiose language attributed to any historical teacher — sole access to the divine, demanded devotion above family, judgment over nations — ends the story capable of something almost the opposite of grandiosity: total, disciplined, lifelong secrecy. Concealment at that level isn't passive. It requires giving up the very thing a grandiose identity needs most — recognition, vindication, being known for who you actually are — and choosing obscurity instead, for the rest of a life, to protect the people who helped him and the truth he'd arrived at. Reading the canon-to-Gnostic shift (Section V) this way, the argument isn't just that ego death happened. It's that the humility on the far side of it was substantial enough to hold a secret that a genuinely self-aggrandizing man never could have kept. The silence becomes the proof of the transformation, not just a plot hole in it.</p>
 <p>Below is the full case, built one piece at a time.</p>
 </section>
+
+<div class="toc-section" id="toc">
+<h2>Table of Contents</h2>
+<div class="toc-grid">
+  <a href="#thesis">Thesis</a>
+  <a href="#swoon">I. The Swoon</a>
+  <a href="#egodeath">IV. Ego Death</a>
+  <a href="#psychmech">The Mechanism</a>
+  <a href="#gnostic">V. The Hidden Voice</a>
+  <a href="#deism">VI. Deism</a>
+  <a href="#kashmir">VII. Kashmir</a>
+  <a href="#trauma">VIII. Trauma &amp; Recovery</a>
+  <a href="#noscience">IX. No Science, Either Way</a>
+  <a href="#stillincredible">X. Still Incredible</a>
+  <a href="#secrecy">XI. The Silence</a>
+  <a href="#synthesis">XII. Four Pillars</a>
+  <a href="#scienceverdict">XIII. The Verdict</a>
+  <a href="#voices">XIV. Other Voices</a>
+  <a href="#masterthread">XV. Master Thread</a>
+  <a href="#rebirth">XVI. Reborn</a>
+  <a href="#prerequisite">XVII. What This Requires</a>
+  <a href="#whymoresense">XVIII. More Sense</a>
+  <a href="#hiddenproof">XIX. The Corroboration</a>
+  <a href="#translations">XX. Translations</a>
+  <a href="#noncanon">XXI. Period Writers</a>
+  <a href="#missing">XXII. What Was Missing</a>
+  <a href="#finalthreads">XXIII. Last Threads</a>
+  <a href="#indiaunexplored">XXIV. India, Deeper</a>
+  <a href="#archaeology">XXV. Archaeology</a>
+  <a href="#whyreturn">XXVI. Why Return</a>
+  <a href="#speculation">Open Questions</a>
+  <a href="#faq">FAQ</a>
+  <a href="#sources">Sources</a>
+</div>
+</div>
 
 <section id="timeline">
 <h2>I. The Anomaly Pilate Noticed</h2>
