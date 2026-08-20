@@ -17,6 +17,12 @@ Read it here: **[Ego Death](https://sauerninja.github.io/Ego-Death/)**
 - `404.html` — themed not-found page
 - `robots.txt`, `sitemap.xml`, `.nojekyll` — site config
 
+## Citation
+
+If you reference, quote, or build on this work, please cite:
+
+> Setvin Noether, *The Man Who Walked Away From the Cross* (Ego Death), https://sauerninja.github.io/Ego-Death/
+
 ## License
 
-Released under the MIT License — see `LICENSE`.
+Released under the MIT License — thoughts and original arguments by Setvin Noether (@SauerNinja) — see `LICENSE`.
