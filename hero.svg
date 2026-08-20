@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+<radialGradient id="glow" cx="50%" cy="38%" r="70%">
+<stop offset="0%" stop-color="#f6e27a"/>
+<stop offset="45%" stop-color="#b8860b"/>
+<stop offset="100%" stop-color="#0d1b3e"/>
+</radialGradient>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0d1b3e"/>
+<stop offset="55%" stop-color="#1c3a72"/>
+<stop offset="100%" stop-color="#1e4d2b"/>
+</linearGradient>
+<linearGradient id="robe" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#7a1f2b"/>
+<stop offset="100%" stop-color="#3d0f16"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<g stroke="#f5f0d8" stroke-width="3" opacity="0.55" fill="none">
+<circle cx="800" cy="330" r="420"/>
+<circle cx="800" cy="330" r="300"/>
+<circle cx="800" cy="330" r="180"/>
+<line x1="800" y1="-90" x2="800" y2="900"/>
+<line x1="0" y1="330" x2="1600" y2="330"/>
+<line x1="180" y1="0" x2="1420" y2="900"/>
+<line x1="1420" y1="0" x2="180" y2="900"/>
+</g>
+<circle cx="800" cy="300" r="260" fill="url(#glow)" opacity="0.9"/>
+<path d="M620 230 Q800 60 980 230 Q1010 420 800 620 Q590 420 620 230 Z" fill="#e8c39e"/>
+<path d="M800 190 L950 260 900 340 800 300 700 340 650 260 Z" fill="#3a2412" opacity="0.9"/>
+<path d="M760 470 Q800 520 840 470 L830 500 Q800 530 770 500 Z" fill="#4a2c14"/>
+<g stroke="#2a1a10" stroke-width="4" fill="none" opacity="0.85">
+<path d="M650 380 Q800 460 950 380"/>
+<path d="M690 340 Q800 300 910 340"/>
+<circle cx="730" cy="290" r="16" fill="#2a1a10" stroke="none"/>
+<circle cx="870" cy="290" r="16" fill="#2a1a10" stroke="none"/>
+</g>
+<path d="M400 900 L620 470 Q800 640 980 470 L1200 900 Z" fill="url(#robe)"/>
+<path d="M400 900 L620 470 Q800 640 980 470 L1200 900" fill="none" stroke="#c9a13b" stroke-width="6" opacity="0.7"/>
+<g stroke="#151515" stroke-width="4" opacity="0.5" fill="none">
+<path d="M0 0 H1600 V900 H0 Z"/>
+<path d="M0 150 H1600 M0 750 H1600"/>
+<path d="M120 0 V900 M1480 0 V900"/>
+</g>
+</svg>
